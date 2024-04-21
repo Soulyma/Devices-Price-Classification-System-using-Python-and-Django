@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "b45b16cb-af87-4351-b8ad-13db917e9d6e",
+		"name": "Device Price",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34415771"
+	},
+	"item": [
+		{
+			"name": "add device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"battery_power\": 841,\r\n            \"blue\": 1,\r\n            \"clock_speed\": 0.5,\r\n            \"dual_sim\": 1,\r\n            \"fc\":4,\r\n            \"four_g\":1 ,\r\n            \"int_memory\":61 ,\r\n            \"m_dep\": 0.8,\r\n            \"mobile_wt\":191,\r\n            \"n_cores\": 5,\r\n            \"pc\":12,\r\n            \"px_height\":746 ,\r\n            \"px_width\": 857,\r\n            \"ram\":3895,\r\n            \"sc_h\": 6,\r\n            \"sc_w\": 0,\r\n            \"talk_time\":7 ,\r\n            \"three_g\": 1,\r\n            \"touch_screen\":0 ,\r\n            \"wifi\":0\r\n            \r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/devices/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"devices",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "pred",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
